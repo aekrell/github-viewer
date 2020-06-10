@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css" />
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body ng-app="gitHubViewer" ng-cloak>
+    <div ng-controller="MainCtrl">
+      <h1>{{message}}</h1>
+
+      {{countdown}} <br />
+      {{username}}
+      <form name="searchUser" ng-submit="search(username)">
+        <input
+          type="search"
+          required
+          placeholder="search username"
+          ng-model="username"
+        />
+        <input type="submit" value="search" /> {{error}}
+      </form>
+
+      <div ng-include="'user.html'" ng-show="user"></div>
+    </div>
+  </body>
+</html>
