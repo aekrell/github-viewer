@@ -1,0 +1,19 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+h1,
+p {
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+div.user {
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
